@@ -32,7 +32,7 @@ const VerificationTab: FC = () => {
       
       // Query Solana blockchain
       // This is a placeholder for the actual Solana blockchain query
-      await querySolanaBlockchain(scannedData);
+      await querySolanaBlockchain();
       
       setVerificationStatus('success');
     } catch (error) {
@@ -41,7 +41,7 @@ const VerificationTab: FC = () => {
     }
   };
 
-  const querySolanaBlockchain = async (data: any) => {
+  const querySolanaBlockchain = async () => {
     // Placeholder for Solana blockchain query
     // In a real implementation, you would:
     // 1. Use @solana/web3.js to connect to the Solana network
